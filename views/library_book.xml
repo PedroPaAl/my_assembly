@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id='montaje_mueble_action' model='ir.actions.act_window'>
+        <field name="name">Muebles</field>
+        <field name="res_model">montaje.mueble</field>
+        <field name="view_mode">kanban,tree,form,calendar</field>
+    </record>
+
+    <record id='montaje_mueble_calendar_action' model='ir.actions.act_window'>
+        <field name="name">Muebles</field>
+        <field name="res_model">montaje.mueble</field>
+        <field name="view_mode">calendar</field>
+    </record>
+
+
+    <menuitem name="Montaje" id="montaje_base_menu" />
+    <menuitem name="Mueble" id="montaje_mueble_menu" parent="montaje_base_menu" action="montaje_mueble_action"/>
+    <menuitem name="Calendar" id="montaje_mueble_menu_calendar" parent="montaje_base_menu" action="montaje_mueble_calendar_action"/>
+
+    <!-- Calendar View -->
+    <record id="montaje_mueble_view_calendar" model="ir.ui.view">
+        <field name="name">Montaje Muebles Calendar</field>
+        <field name="model">montaje.mueble</field>
+        <field name="arch" type="xml">
+            <calendar string="Calendario Montaje" fecha_incio="date_inicio" mode="month">
+                <field name="name"/>
+            </calendar>
+        </field>
+    </record>
+
+    <!-- Kanban View -->
+    <record id="montaje_mueble_rent_view_kanban" model="ir.ui.view">
+        <field name="name">Mueble Kanban</field>
+        <field name="model">montaje.mueble</field>
+        <field name="arch" type="xml">
+            <kanban default_group_by="state">
+                <field name="state" />
+                <templates>
+                    <t t-name="kanban-box">
+                        <div class="oe_kanban_global_click">
+                            <div class="oe_kanban_content">
+                                <div class="oe_kanban_card">
+                                    <div>
+                                        <i class="fa fa-tag"/>
+                                        <b>
+                                            <field name="category_id" />
+                                        </b>
+                                    </div>
+                                    <div class="text-muted">
+                                        <i class="fa fa-book"/>
+                                        <field name="name" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>    
+
+    <!-- Form View -->
+    <record id="montaje_mueble_view_form" model="ir.ui.view">
+        <field name="name">Montaje Mueble Form</field>
+        <field name="model">montaje.mueble</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button name="make_porhacer" string="Por hacer" type="object"/>
+                    <button name="make_enproceso"  string="En proceso" type="object"/>
+                    <button name="make_terminado"  string="Terminado" type="object"/>
+                    <field name="state" widget="statusbar"/>
+                </header>
+                <group>
+                    <group>
+                        <field name="name"/>
+                        <field name="montador" widget="many2many_tags"/>
+                        <field name="cliente" widget="many2many_tags"/>
+                    </group>
+                    <group>
+                        <field name="category_id"/>
+                        <field name="fecha_inicio"/>
+                        <field name="fecha_final"/>
+                    </group>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <!-- Tree(list) View -->
+    <record id="montaje_mueble_view_tree" model="ir.ui.view">
+        <field name="name">Montaje Muebles List</field>
+        <field name="model">montaje.mueble</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="fecha_incio"/>
+                <field name="fecha_final"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Search View -->
+    <record id="montaje_mueble_view_search" model="ir.ui.view">
+        <field name="name">Montaje muebles Search</field>
+        <field name="model">montaje.mueble</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+                <field name="montador"/>
+                <field name="cliente"/>
+                <filter string="Sin terminar" name="sin terminar" domain="[('fecha_final','=',False)]"/>
+                <filter string="Terminados" name="terminados" domain="[('fecha_final','=','True')]"/>
+            </search>
+        </field>
+    </record>
+</odoo>
