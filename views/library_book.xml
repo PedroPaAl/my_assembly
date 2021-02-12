@@ -23,7 +23,7 @@
         <field name="name">Montaje Muebles Calendar</field>
         <field name="model">montaje.mueble</field>
         <field name="arch" type="xml">
-            <calendar string="Calendario Montaje" fecha_incio="date_inicio" mode="month">
+            <calendar string="Calendario Montaje" fecha_incio="fecha_inicio" mode="month">
                 <field name="name"/>
             </calendar>
         </field>
