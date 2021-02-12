@@ -14,8 +14,8 @@ Description related to Assembly.
     'depends': ['base'],
 
     'data': [
-        'security/groups.xml',
-        'security/ir.model.access.csv',
+        #'security/groups.xml',
+        #'security/ir.model.access.csv',
         'views/montaje_mueble.xml',
         'views/montaje_mueble_categ.xml',
         'views/partner.xml',
