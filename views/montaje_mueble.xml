@@ -110,8 +110,8 @@
                 <field name="name"/>
                 <field name="montador"/>
                 <field name="cliente"/>
-                <filter string="Sin terminar" name="sin terminar" domain="[('fecha_final','=',False)]"/>
-                <filter string="Terminados" name="terminados" domain="[('fecha_final','=',True)]"/>
+                <filter string="Sin terminar" name="sin terminar" domain="[('state','!=','terminado')]"/>
+                <filter string="Terminados" name="terminados" domain="[('state','=','terminado')]"/>
             </search>
         </field>
     </record>
