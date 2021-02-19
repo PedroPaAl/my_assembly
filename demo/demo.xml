@@ -1,0 +1,79 @@
+<odoo>
+    <data>
+
+        <!--Clients -->
+
+        <record id="client_paco_lopez" model="res.partner">
+            <field name="name">Paco Lopez</field>
+        </record>
+
+        <record id="client_juanito_pisicinas" model="res.partner">
+            <field name="name">Juanito Piscinas</field>
+        </record> 
+
+        <!--Clients -->
+
+        <record id="user_pedro_palacios" model="res.users">
+            <field name="name">Pedro Palacios</field>
+        </record>
+
+        <record id="user_jose_montador" model="res.users">
+            <field name="name">Jose Montador</field>
+        </record>          
+
+        <!-- Furniture Categories -->
+
+        <record id="category_kitchen" model="montaje.mueble.category">
+            <field name="name">Kitchen</field>
+            <field name="description">Kitchen furniture</field>
+        </record>
+
+        <record id="category_dining" model="montaje.mueble.category">
+            <field name="name">Dining room</field>
+            <field name="description">Dining room furniture</field>
+        </record>
+
+        <record id="category_bedroom" model="montaje.mueble.category">
+            <field name="name">Bedroom</field>
+            <field name="description">Bedroom furniture</field>
+        </record>  
+
+        <record id="category_office" model="montaje.mueble.category">
+            <field name="name">Office</field>
+            <field name="description">Office furniture</field>
+        </record>          
+
+        <!-- Muebles -->
+
+        <record id="furniture_one" model="montaje.mueble">
+            <field name="name">Mueble1</field>
+            <field name="state">por hacer</field>
+            <field name="fecha_inicio">2021-02-25</field>
+            <field name="fecha_final">2021-02-25</field>
+            <field name="category_id" ref="category_dining"/>
+            <field name="montador" eval="[(6, 0, [ ref('user_pedro_palacios'), ])]"/>
+            <field name="cliente" eval="[(6, 0, [ ref('client_juanito_pisicinas'), ])]"/>
+        </record>
+
+        <record id="furniture_dos" model="montaje.mueble">
+            <field name="name">Mueble2</field>
+            <field name="state">en proceso</field>
+            <field name="fecha_inicio">2021-02-20</field>
+            <field name="fecha_final">2021-03-30</field>
+            <field name="category_id" ref="category_office"/>
+            <field name="montador" eval="[(6, 0, [ ref('user_pedro_palacios'), ])]"/>
+            <field name="cliente" eval="[(6, 0, [ ref('client_juanito_pisicinas'), ])]"/>
+        </record>
+
+        <record id="furniture_tres" model="montaje.mueble">
+            <field name="name">Mueble3</field>
+            <field name="state">terminado</field>
+            <field name="fecha_inicio">2021-02-10</field>
+            <field name="fecha_final">2021-02-15</field>
+            <field name="category_id" ref="category_kitchen"/>
+            <field name="montador" eval="[(6, 0, [ ref('user_jose_montador'), ])]"/>
+            <field name="cliente" eval="[(6, 0, [ ref('client_juanito_pisicinas'), ])]"/>
+        </record>
+
+    </data>
+</odoo>
