@@ -10,9 +10,9 @@ logger = logging.getLogger(__name__)
 
 class MueblesMontaje(models.Model):
     _name = 'montaje.mueble'
-    _description = 'Montaje de muebles'
+    _description = 'For furniture assemblers'
 
-    name = fields.Char('Name', required=True)
+    name = fields.Char('product.template',string='Name', required=True)
     montador = fields.Many2many('res.users', string='Assembler')
     fecha_inicio = fields.Date('Start date')
     fecha_final = fields.Date('Finish date')    
@@ -36,7 +36,7 @@ class MueblesMontaje(models.Model):
             if montaje.is_allowed_transition(montaje.state, new_state):
                 montaje.state = new_state
             else:
-                message = _('Pasar de %s a %s no esta permitido') % (montaje.state, new_state)
+                message = _('Changing from %s to %s not allowed') % (montaje.state, new_state)
                 raise UserError(message)
 
     def make_porhacer(self):

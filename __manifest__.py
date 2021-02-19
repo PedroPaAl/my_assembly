@@ -24,4 +24,6 @@ Description related to Assembly.
     # 'demo': [
     #     'demo.xml'
     # ],
-}
+    'instalable':True,
+    'application':True,
+    }

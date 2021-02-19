@@ -2,12 +2,12 @@
 <odoo>
 
     <record id='montaje_mueble_category_action' model='ir.actions.act_window'>
-        <field name="name">Categoria Muebles</field>
+        <field name="name">Furniture Categories</field>
         <field name="res_model">montaje.mueble.category</field>
         <field name="view_mode">tree,form</field>
     </record>
 
-    <menuitem name="Categoria Muebles" id="montaje_mueble_category_menu" parent="montaje_base_menu" action="montaje_mueble_category_action"/>
+    <menuitem name="Furniture Categories" id="montaje_mueble_category_menu" parent="montaje_base_menu" action="montaje_mueble_category_action"/>
 
     <!-- Form View -->
     <record id="montaje_mueble_category_view_form" model="ir.ui.view">
