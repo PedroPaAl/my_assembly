@@ -12,17 +12,17 @@ class MueblesMontaje(models.Model):
     _name = 'montaje.mueble'
     _description = 'Montaje de muebles'
 
-    name = fields.Char('Nombre', required=True)
-    montador = fields.Many2many('res.users', string='Montador')
-    fecha_inicio = fields.Date('Fecha Inicio')
-    fecha_final = fields.Date('Fecha Final')    
-    cliente = fields.Many2many('res.partner', string='Cliente')
-    category_id = fields.Many2one('montaje.mueble.category', string='Categoria')
+    name = fields.Char('Name', required=True)
+    montador = fields.Many2many('res.users', string='Assembler')
+    fecha_inicio = fields.Date('Start date')
+    fecha_final = fields.Date('Finish date')    
+    cliente = fields.Many2many('res.partner', string='Client')
+    category_id = fields.Many2one('montaje.mueble.category', string='Category')
 
     state = fields.Selection([
-        ('por hacer', 'Por hacer'),
-        ('en proceso', 'En proceso'),
-        ('terminado', 'Terminado')],
+        ('por hacer', 'Peding'),
+        ('en proceso', 'In the making'),
+        ('terminado', 'Finished')],
         'State', default="por hacer")
 
     @api.model
