@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0-20201029\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-19 22:39+0000\n"
-"PO-Revision-Date: 2021-02-19 23:46+0100\n"
+"POT-Creation-Date: 2021-02-23 21:57+0000\n"
+"PO-Revision-Date: 2021-02-23 23:00+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -180,7 +180,7 @@ msgstr ""
 #. module: my_assembly
 #: model:ir.model.fields,field_description:my_assembly.field_muebles_member__date
 msgid "Date"
-msgstr ""
+msgstr "Fecha"
 
 #. module: my_assembly
 #: model:ir.model.fields,field_description:my_assembly.field_muebles_member__date_of_birth
@@ -304,7 +304,7 @@ msgstr ""
 #: model:ir.model.fields.selection,name:my_assembly.selection__montaje_mueble__state__en_proceso
 #: model_terms:ir.ui.view,arch_db:my_assembly.montaje_mueble_view_form
 msgid "In the making"
-msgstr ""
+msgstr "En proceso"
 
 #. module: my_assembly
 #: model:ir.model.fields,field_description:my_assembly.field_muebles_member__industry_id
@@ -379,7 +379,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:my_assembly.field_montaje_mueble__name
 #: model:ir.model.fields,field_description:my_assembly.field_muebles_member__name
 msgid "Name"
-msgstr ""
+msgstr "Nombre"
 
 #. module: my_assembly
 #: model_terms:ir.ui.view,arch_db:my_assembly.montaje_mueble_view_search
@@ -419,12 +419,12 @@ msgstr ""
 #. module: my_assembly
 #: model:ir.model.fields.selection,name:my_assembly.selection__montaje_mueble__state__por_hacer
 msgid "Peding"
-msgstr ""
+msgstr "Por hacer"
 
 #. module: my_assembly
 #: model_terms:ir.ui.view,arch_db:my_assembly.montaje_mueble_view_form
 msgid "Pending"
-msgstr ""
+msgstr "Por hacer"
 
 #. module: my_assembly
 #: model:ir.model.fields,field_description:my_assembly.field_muebles_member__phone
