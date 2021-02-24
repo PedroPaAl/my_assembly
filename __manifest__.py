@@ -19,6 +19,7 @@ Description related to Assembly.
         'views/montaje_mueble.xml',
         'views/montaje_mueble_categ.xml',
         'demo/demo.xml',
+        'reports/furniture_report.xml',
         #'views/partner.xml',
     ],
     # This demo data files will be loaded if db initialize with demo data (commented becaues file is not added in this example)

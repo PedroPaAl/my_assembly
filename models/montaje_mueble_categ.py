@@ -22,6 +22,8 @@ class BookCategory(models.Model):
         string='Child Categories')
     parent_path = fields.Char(index=True)
 
+    furniture_ids = fields.One2many('montaje.mueble', 'category_id','Mueble')
+
     @api.constrains('parent_id')
     def _check_hierarchy(self):
         if not self._check_recursion():

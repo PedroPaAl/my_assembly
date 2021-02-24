@@ -50,15 +50,17 @@
                                         <table class="table">
                                             <thead>
                                                 <tr>
-                                                    <th>furniture</th>
+							<th>furniture</th>
+							<th>assembler</th>
+							<th>state</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr t-foreach="doc.mueble_ids" t-as="mueble">
+                                                <tr t-foreach="doc.furniture_ids" t-as="mueble">
                                                     <td><span t-field="mueble.name"/></td>
                                                     <td>
                                                         <ul>
-                                                            <li t-foreach="mueble.montador" t-as="motador">
+                                                            <li t-foreach="mueble.montador" t-as="montador">
                                                                <span t-field="montador.name"/>
                                                             </li>
                                                         </ul>
