@@ -42,13 +42,13 @@
                             <div class="oe_kanban_content">
                                 <div class="oe_kanban_card">
                                     <div>
-                                        <i class="fa fa-tag"/>
+                                        
                                         <b>
                                             <field name="category_id" />
                                         </b>
                                     </div>
                                     <div class="text-muted">
-                                        <i class="fa fa-book"/>
+                                        
                                         <field name="name" />
                                     </div>
                                 </div>

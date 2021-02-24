@@ -1,7 +1,7 @@
 <odoo>
     <data>
 
-        <!--Clients -->
+        <!--Clientes -->
 
         <record id="client_paco_lopez" model="res.partner">
             <field name="name">Paco Lopez</field>
@@ -11,14 +11,16 @@
             <field name="name">Juanito Piscinas</field>
         </record> 
 
-        <!--Clients -->
+        <!--Montadores -->
 
         <record id="user_pedro_palacios" model="res.users">
-            <field name="name">Pedro Palacios</field>
+		<field name="name">Pedro Palacios</field>
+		<field name="login">pedro@pedro.es</field>
         </record>
 
         <record id="user_jose_montador" model="res.users">
-            <field name="name">Jose Montador</field>
+		<field name="name">Jose Montador</field>
+		<field name="login">Jose@jose.es</field>
         </record>          
 
         <!-- Furniture Categories -->

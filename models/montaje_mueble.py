@@ -12,7 +12,7 @@ class MueblesMontaje(models.Model):
     _name = 'montaje.mueble'
     _description = 'For furniture assemblers'
 
-    name = fields.Char('product.template',string='Name', required=True)
+    name = fields.Char('Name', required=True)
     montador = fields.Many2many('res.users', string='Assembler')
     fecha_inicio = fields.Date('Start date')
     fecha_final = fields.Date('Finish date')    
