@@ -21,7 +21,7 @@ class MueblesMontaje(models.Model):
     category_id = fields.Many2one('montaje.mueble.category', string='Category')
 
     state = fields.Selection([
-        ('por hacer', 'Peding'),
+        ('por hacer', 'Pending'),
         ('en proceso', 'In the making'),
         ('terminado', 'Finished')],
         'State', default="por hacer")
