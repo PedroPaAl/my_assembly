@@ -7,7 +7,7 @@
         <field name="view_mode">tree,form</field>
     </record>
 
-    <menuitem name="Furniture Categories" id="montaje_mueble_category_menu" parent="montaje_base_menu" action="montaje_mueble_category_action"/>
+    <menuitem name="Assembly Categories" id="montaje_mueble_category_menu" parent="montaje_base_menu" action="montaje_mueble_category_action"/>
 
     <!-- Form View -->
     <record id="montaje_mueble_category_view_form" model="ir.ui.view">
