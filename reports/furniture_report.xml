@@ -56,7 +56,8 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr t-foreach="doc.furniture_ids" t-as="mueble">
+						    <tr t-foreach="doc.furniture_ids" t-as="mueble">
+							 <t t-if="mueble.state != 'terminado'">
                                                     <td><span t-field="mueble.name"/></td>
                                                     <td>
                                                         <ul>
@@ -64,12 +65,21 @@
                                                                <span t-field="montador.name"/>
                                                             </li>
                                                         </ul>
-                                                    </td>
-                                                    <td>
-                                                        <!-- Ejemplo de if -->
-                                                        <t t-if="mueble.state == 'terminado'">Finished</t>
-                                                        <t t-else=""></t>
-                                                    </td>
+						</td>
+						<td>
+							<t t-if="mueble.state == 'por hacer'">Pending</t>
+							<t t-else="">In the making</t>
+						</td>
+					</t>
+					<t t-else=""></t>
+						
+						
+						
+							    
+                                                       
+                                                       
+                                                        
+                          
                                                 </tr>
                                             </tbody>
                                         </table>

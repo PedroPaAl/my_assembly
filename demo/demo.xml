@@ -1,5 +1,6 @@
 <odoo>
     <data>
+	    
 
         <!--Clientes -->
 
@@ -21,7 +22,9 @@
         <record id="user_jose_montador" model="res.users">
 		<field name="name">Jose Montador</field>
 		<field name="login">Jose@jose.es</field>
-        </record>          
+	</record>
+
+	
 
         <!-- Furniture Categories -->
 
@@ -48,7 +51,8 @@
         <!-- Muebles -->
 
         <record id="furniture_one" model="montaje.mueble">
-            <field name="name">Mueble1</field>
+		<field name="name">Montaje1</field>
+		
             <field name="state">por hacer</field>
             <field name="fecha_inicio">2021-02-25</field>
             <field name="fecha_final">2021-02-25</field>
@@ -58,7 +62,7 @@
         </record>
 
         <record id="furniture_dos" model="montaje.mueble">
-            <field name="name">Mueble2</field>
+            <field name="name">Montaje2</field>
             <field name="state">en proceso</field>
             <field name="fecha_inicio">2021-02-20</field>
             <field name="fecha_final">2021-03-30</field>
@@ -68,7 +72,7 @@
         </record>
 
         <record id="furniture_tres" model="montaje.mueble">
-            <field name="name">Mueble3</field>
+            <field name="name">montaje3</field>
             <field name="state">terminado</field>
             <field name="fecha_inicio">2021-02-10</field>
             <field name="fecha_final">2021-02-15</field>

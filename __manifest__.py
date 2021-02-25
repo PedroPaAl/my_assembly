@@ -11,7 +11,7 @@ Description related to Assembly.
     'website': "http://www.grupo2.com",
     'category': 'Tools',
     'version': '1.0',
-    'depends': ['base'],
+    'depends': ['base', 'product'],
 
     'data': [
         #'security/groups.xml',

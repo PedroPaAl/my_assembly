@@ -75,8 +75,9 @@
                 <group>
                     <group>
                         <field name="name"/>
-                        <field name="montador" widget="many2many_tags"/>
                         <field name="cliente" widget="many2many_tags"/>
+                        <field name="muebles" widget="many2many_tags"/>
+                        <field name="montador" widget="many2many_tags"/>
                     </group>
                     <group>
                         <field name="category_id"/>
