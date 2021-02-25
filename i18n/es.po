@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 14.0-20201029\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-02-25 23:00+0000\n"
-"PO-Revision-Date: 2021-02-26 00:02+0100\n"
+"PO-Revision-Date: 2021-02-26 00:24+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -84,7 +84,7 @@ msgstr "Calendario Montaje"
 #. module: my_assembly
 #: model:ir.actions.act_window,name:my_assembly.montaje_mueble_category_action
 msgid "Assembly Categories"
-msgstr "Assembly Category"
+msgstr "Categoria Montajes"
 
 #. module: my_assembly
 #: model:ir.model.fields,field_description:my_assembly.field_muebles_member__message_attachment_count
