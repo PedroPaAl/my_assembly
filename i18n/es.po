@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0-20201029\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-23 21:57+0000\n"
-"PO-Revision-Date: 2021-02-23 23:00+0100\n"
+"POT-Creation-Date: 2021-02-25 23:00+0000\n"
+"PO-Revision-Date: 2021-02-26 00:02+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -17,6 +17,11 @@ msgstr ""
 "X-Generator: Poedit 1.5.7\n"
 
 #. module: my_assembly
+#: model:ir.model.fields,field_description:my_assembly.field_muebles_member__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: my_assembly
 #: model:ir.model.fields,field_description:my_assembly.field_muebles_member__active
 msgid "Active"
 msgstr ""
@@ -24,6 +29,26 @@ msgstr ""
 #. module: my_assembly
 #: model:ir.model.fields,field_description:my_assembly.field_muebles_member__active_lang_count
 msgid "Active Lang Count"
+msgstr ""
+
+#. module: my_assembly
+#: model:ir.model.fields,field_description:my_assembly.field_muebles_member__activity_ids
+msgid "Activities"
+msgstr ""
+
+#. module: my_assembly
+#: model:ir.model.fields,field_description:my_assembly.field_muebles_member__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: my_assembly
+#: model:ir.model.fields,field_description:my_assembly.field_muebles_member__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: my_assembly
+#: model:ir.model.fields,field_description:my_assembly.field_muebles_member__activity_type_icon
+msgid "Activity Type Icon"
 msgstr ""
 
 #. module: my_assembly
@@ -44,13 +69,26 @@ msgid "Assembler"
 msgstr "Montadores"
 
 #. module: my_assembly
+#: model:ir.actions.act_window,name:my_assembly.montaje_mueble_action
+#: model:ir.actions.act_window,name:my_assembly.montaje_mueble_calendar_action
 #: model:ir.ui.menu,name:my_assembly.montaje_base_menu
+#: model:ir.ui.menu,name:my_assembly.montaje_mueble_menu
 msgid "Assembly"
 msgstr "Montaje"
 
 #. module: my_assembly
 #: model_terms:ir.ui.view,arch_db:my_assembly.montaje_mueble_view_calendar
 msgid "Assembly Calendar"
+msgstr "Calendario Montaje"
+
+#. module: my_assembly
+#: model:ir.actions.act_window,name:my_assembly.montaje_mueble_category_action
+msgid "Assembly Categories"
+msgstr "Assembly Category"
+
+#. module: my_assembly
+#: model:ir.model.fields,field_description:my_assembly.field_muebles_member__message_attachment_count
+msgid "Attachment Count"
 msgstr ""
 
 #. module: my_assembly
@@ -71,6 +109,16 @@ msgid "Barcode"
 msgstr ""
 
 #. module: my_assembly
+#: model:ir.model.fields,field_description:my_assembly.field_muebles_member__is_blacklisted
+msgid "Blacklist"
+msgstr ""
+
+#. module: my_assembly
+#: model:ir.model.fields,field_description:my_assembly.field_muebles_member__message_bounce
+msgid "Bounce"
+msgstr ""
+
+#. module: my_assembly
 #: model:ir.ui.menu,name:my_assembly.montaje_mueble_menu_calendar
 msgid "Calendar"
 msgstr "Calendario"
@@ -82,9 +130,19 @@ msgid "Category"
 msgstr "Categoria"
 
 #. module: my_assembly
+#: model_terms:ir.ui.view,arch_db:my_assembly.report_mueble_view
+msgid "Category:"
+msgstr "Categoria:"
+
+#. module: my_assembly
 #: code:addons/my_assembly/models/montaje_mueble.py:0
 #, python-format
 msgid "Changing from %s to %s not allowed"
+msgstr ""
+
+#. module: my_assembly
+#: model:ir.model.fields,field_description:my_assembly.field_muebles_member__channel_ids
+msgid "Channels"
 msgstr ""
 
 #. module: my_assembly
@@ -154,6 +212,11 @@ msgid "Contact"
 msgstr "Contacto"
 
 #. module: my_assembly
+#: model:ir.model.fields,help:my_assembly.field_muebles_member__message_bounce
+msgid "Counter of the number of bounced emails for this contact"
+msgstr ""
+
+#. module: my_assembly
 #: model:ir.model.fields,field_description:my_assembly.field_muebles_member__country_id
 msgid "Country"
 msgstr ""
@@ -190,6 +253,11 @@ msgstr ""
 #. module: my_assembly
 #: model:ir.model.fields,field_description:my_assembly.field_montaje_mueble_category__description
 msgid "Description"
+msgstr ""
+
+#. module: my_assembly
+#: model_terms:ir.ui.view,arch_db:my_assembly.report_mueble_view
+msgid "Description:"
 msgstr ""
 
 #. module: my_assembly
@@ -231,6 +299,31 @@ msgid "Finished"
 msgstr "Terminado"
 
 #. module: my_assembly
+#: model:ir.model.fields,field_description:my_assembly.field_muebles_member__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: my_assembly
+#: model:ir.model.fields,field_description:my_assembly.field_muebles_member__message_channel_ids
+msgid "Followers (Channels)"
+msgstr ""
+
+#. module: my_assembly
+#: model:ir.model.fields,field_description:my_assembly.field_muebles_member__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: my_assembly
+#: model:ir.model.fields,help:my_assembly.field_muebles_member__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: my_assembly
+#: model:ir.model,name:my_assembly.model_montaje_mueble
+msgid "For furniture assemblers"
+msgstr ""
+
+#. module: my_assembly
 #: model:ir.model.fields,help:my_assembly.field_muebles_member__email_formatted
 msgid "Format email address \"Name <email@domain>\""
 msgstr ""
@@ -241,21 +334,14 @@ msgid "Formatted Email"
 msgstr ""
 
 #. module: my_assembly
-#: model:ir.actions.act_window,name:my_assembly.montaje_mueble_action
-#: model:ir.actions.act_window,name:my_assembly.montaje_mueble_calendar_action
+#: model:ir.model.fields,field_description:my_assembly.field_montaje_mueble__muebles
 msgid "Furniture"
-msgstr "Mueble"
+msgstr ""
 
 #. module: my_assembly
-#: model:ir.actions.act_window,name:my_assembly.montaje_mueble_category_action
 #: model:ir.ui.menu,name:my_assembly.montaje_mueble_category_menu
 msgid "Furniture Categories"
 msgstr "Categorias Mueble"
-
-#. module: my_assembly
-#: model:ir.ui.menu,name:my_assembly.montaje_mueble_menu
-msgid "Furnitures"
-msgstr "Muebles"
 
 #. module: my_assembly
 #: model:ir.model.fields,field_description:my_assembly.field_muebles_member__partner_latitude
@@ -273,6 +359,46 @@ msgstr ""
 #: model:ir.model.fields,field_description:my_assembly.field_muebles_member__id
 #: model:ir.model.fields,field_description:my_assembly.field_res_partner__id
 msgid "ID"
+msgstr ""
+
+#. module: my_assembly
+#: model:ir.model.fields,field_description:my_assembly.field_muebles_member__im_status
+msgid "IM Status"
+msgstr ""
+
+#. module: my_assembly
+#: model:ir.model.fields,field_description:my_assembly.field_muebles_member__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: my_assembly
+#: model:ir.model.fields,help:my_assembly.field_muebles_member__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: my_assembly
+#: model:ir.model.fields,help:my_assembly.field_muebles_member__message_needaction
+#: model:ir.model.fields,help:my_assembly.field_muebles_member__message_unread
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: my_assembly
+#: model:ir.model.fields,help:my_assembly.field_muebles_member__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: my_assembly
+#: model:ir.model.fields,help:my_assembly.field_muebles_member__team_id
+msgid ""
+"If set, this Sales Team will be used for sales and assignments related to "
+"this partner"
+msgstr ""
+
+#. module: my_assembly
+#: model:ir.model.fields,help:my_assembly.field_muebles_member__is_blacklisted
+msgid ""
+"If the email address is on the blacklist, the contact won't receive mass "
+"mailing anymore, from any list"
 msgstr ""
 
 #. module: my_assembly
@@ -303,6 +429,7 @@ msgstr ""
 #. module: my_assembly
 #: model:ir.model.fields.selection,name:my_assembly.selection__montaje_mueble__state__en_proceso
 #: model_terms:ir.ui.view,arch_db:my_assembly.montaje_mueble_view_form
+#: model_terms:ir.ui.view,arch_db:my_assembly.report_mueble_view
 msgid "In the making"
 msgstr "En proceso"
 
@@ -316,6 +443,11 @@ msgstr ""
 msgid ""
 "Invoice & Delivery addresses are used in sales orders. Private addresses are "
 "only visible by authorized users."
+msgstr ""
+
+#. module: my_assembly
+#: model:ir.model.fields,field_description:my_assembly.field_muebles_member__message_is_follower
+msgid "Is Follower"
 msgstr ""
 
 #. module: my_assembly
@@ -356,6 +488,11 @@ msgid "Last Updated on"
 msgstr ""
 
 #. module: my_assembly
+#: model:ir.model.fields,field_description:my_assembly.field_muebles_member__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. module: my_assembly
 #: model:ir.model.fields,field_description:my_assembly.field_muebles_member__member_number
 msgid "Member Number"
 msgstr ""
@@ -366,13 +503,23 @@ msgid "Member Since"
 msgstr ""
 
 #. module: my_assembly
+#: model:ir.model.fields,field_description:my_assembly.field_muebles_member__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: my_assembly
+#: model:ir.model.fields,field_description:my_assembly.field_muebles_member__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: my_assembly
 #: model:ir.model.fields,field_description:my_assembly.field_muebles_member__mobile
 msgid "Mobile"
 msgstr ""
 
 #. module: my_assembly
-#: model:ir.model,name:my_assembly.model_montaje_mueble
-msgid "Montaje de muebles"
+#: model:ir.model.fields,field_description:my_assembly.field_montaje_mueble_category__furniture_ids
+msgid "Mueble"
 msgstr ""
 
 #. module: my_assembly
@@ -382,6 +529,26 @@ msgid "Name"
 msgstr "Nombre"
 
 #. module: my_assembly
+#: model:ir.model.fields,field_description:my_assembly.field_muebles_member__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: my_assembly
+#: model:ir.model.fields,field_description:my_assembly.field_muebles_member__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: my_assembly
+#: model:ir.model.fields,field_description:my_assembly.field_muebles_member__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: my_assembly
+#: model:ir.model.fields,field_description:my_assembly.field_muebles_member__email_normalized
+msgid "Normalized Email"
+msgstr ""
+
+#. module: my_assembly
 #: model_terms:ir.ui.view,arch_db:my_assembly.montaje_mueble_view_search
 msgid "Not Finished"
 msgstr ""
@@ -389,6 +556,31 @@ msgstr ""
 #. module: my_assembly
 #: model:ir.model.fields,field_description:my_assembly.field_muebles_member__comment
 msgid "Notes"
+msgstr ""
+
+#. module: my_assembly
+#: model:ir.model.fields,field_description:my_assembly.field_muebles_member__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: my_assembly
+#: model:ir.model.fields,field_description:my_assembly.field_muebles_member__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: my_assembly
+#: model:ir.model.fields,help:my_assembly.field_muebles_member__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr ""
+
+#. module: my_assembly
+#: model:ir.model.fields,help:my_assembly.field_muebles_member__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: my_assembly
+#: model:ir.model.fields,help:my_assembly.field_muebles_member__message_unread_counter
+msgid "Number of unread messages"
 msgstr ""
 
 #. module: my_assembly
@@ -423,12 +615,18 @@ msgstr "Por hacer"
 
 #. module: my_assembly
 #: model_terms:ir.ui.view,arch_db:my_assembly.montaje_mueble_view_form
+#: model_terms:ir.ui.view,arch_db:my_assembly.report_mueble_view
 msgid "Pending"
 msgstr "Por hacer"
 
 #. module: my_assembly
 #: model:ir.model.fields,field_description:my_assembly.field_muebles_member__phone
 msgid "Phone"
+msgstr ""
+
+#. module: my_assembly
+#: model:ir.model.fields,field_description:my_assembly.field_muebles_member__property_product_pricelist
+msgid "Pricelist"
 msgstr ""
 
 #. module: my_assembly
@@ -439,6 +637,16 @@ msgstr ""
 #. module: my_assembly
 #: model:ir.model.fields,field_description:my_assembly.field_muebles_member__parent_id
 msgid "Related Company"
+msgstr ""
+
+#. module: my_assembly
+#: model:ir.model.fields,field_description:my_assembly.field_muebles_member__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: my_assembly
+#: model:ir.model.fields,field_description:my_assembly.field_muebles_member__team_id
+msgid "Sales Team"
 msgstr ""
 
 #. module: my_assembly
@@ -457,6 +665,31 @@ msgid "Share Partner"
 msgstr ""
 
 #. module: my_assembly
+#: model:ir.model.fields,field_description:my_assembly.field_muebles_member__signup_expiration
+msgid "Signup Expiration"
+msgstr ""
+
+#. module: my_assembly
+#: model:ir.model.fields,field_description:my_assembly.field_muebles_member__signup_token
+msgid "Signup Token"
+msgstr ""
+
+#. module: my_assembly
+#: model:ir.model.fields,field_description:my_assembly.field_muebles_member__signup_type
+msgid "Signup Token Type"
+msgstr ""
+
+#. module: my_assembly
+#: model:ir.model.fields,field_description:my_assembly.field_muebles_member__signup_valid
+msgid "Signup Token is Valid"
+msgstr ""
+
+#. module: my_assembly
+#: model:ir.model.fields,field_description:my_assembly.field_muebles_member__signup_url
+msgid "Signup URL"
+msgstr ""
+
+#. module: my_assembly
 #: model:ir.model.fields,field_description:my_assembly.field_montaje_mueble__fecha_inicio
 msgid "Start date"
 msgstr "Fecha Inicio"
@@ -466,6 +699,15 @@ msgstr "Fecha Inicio"
 #: model:ir.model.fields,field_description:my_assembly.field_muebles_member__state_id
 msgid "State"
 msgstr "Estado"
+
+#. module: my_assembly
+#: model:ir.model.fields,help:my_assembly.field_muebles_member__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
 
 #. module: my_assembly
 #: model:ir.model.fields,field_description:my_assembly.field_muebles_member__street
@@ -505,6 +747,20 @@ msgid "The internal user in charge of this contact."
 msgstr ""
 
 #. module: my_assembly
+#: model:ir.model.fields,help:my_assembly.field_muebles_member__email_normalized
+msgid ""
+"This field is used to search on email address as the primary email field can "
+"contain more than strictly an email address."
+msgstr ""
+
+#. module: my_assembly
+#: model:ir.model.fields,help:my_assembly.field_muebles_member__property_product_pricelist
+msgid ""
+"This pricelist will be used, instead of the default one, for sales to the "
+"current partner"
+msgstr ""
+
+#. module: my_assembly
 #: model:ir.model.fields,field_description:my_assembly.field_muebles_member__tz
 msgid "Timezone"
 msgstr ""
@@ -517,6 +773,21 @@ msgstr ""
 #. module: my_assembly
 #: model:ir.model.fields,field_description:my_assembly.field_muebles_member__title
 msgid "Title"
+msgstr ""
+
+#. module: my_assembly
+#: model:ir.model.fields,help:my_assembly.field_muebles_member__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: my_assembly
+#: model:ir.model.fields,field_description:my_assembly.field_muebles_member__message_unread
+msgid "Unread Messages"
+msgstr ""
+
+#. module: my_assembly
+#: model:ir.model.fields,field_description:my_assembly.field_muebles_member__message_unread_counter
+msgid "Unread Messages Counter"
 msgstr ""
 
 #. module: my_assembly
@@ -550,6 +821,26 @@ msgid "Zip"
 msgstr ""
 
 #. module: my_assembly
+#: model_terms:ir.ui.view,arch_db:my_assembly.report_mueble_view
+msgid "assembler"
+msgstr ""
+
+#. module: my_assembly
+#: model_terms:ir.ui.view,arch_db:my_assembly.report_mueble_view
+msgid "furniture"
+msgstr ""
+
+#. module: my_assembly
+#: model:ir.actions.report,name:my_assembly.report_mueble
+msgid "furniture Report"
+msgstr ""
+
+#. module: my_assembly
+#: model:ir.actions.report,name:my_assembly.report_mueble_pdf
+msgid "furniture Report (PDF)"
+msgstr ""
+
+#. module: my_assembly
 #: model:ir.model,name:my_assembly.model_montaje_mueble_category
 msgid "montaje.mueble.category"
 msgstr ""
@@ -557,4 +848,9 @@ msgstr ""
 #. module: my_assembly
 #: model:ir.model,name:my_assembly.model_muebles_member
 msgid "muebles member"
+msgstr ""
+
+#. module: my_assembly
+#: model_terms:ir.ui.view,arch_db:my_assembly.report_mueble_view
+msgid "state"
 msgstr ""
