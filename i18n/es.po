@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0-20201029\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-25 23:00+0000\n"
-"PO-Revision-Date: 2021-02-26 00:24+0100\n"
+"POT-Creation-Date: 2021-02-26 14:55+0000\n"
+"PO-Revision-Date: 2021-02-26 15:56+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -83,6 +83,7 @@ msgstr "Calendario Montaje"
 
 #. module: my_assembly
 #: model:ir.actions.act_window,name:my_assembly.montaje_mueble_category_action
+#: model:ir.ui.menu,name:my_assembly.montaje_mueble_category_menu
 msgid "Assembly Categories"
 msgstr "Categoria Montajes"
 
@@ -336,12 +337,7 @@ msgstr ""
 #. module: my_assembly
 #: model:ir.model.fields,field_description:my_assembly.field_montaje_mueble__muebles
 msgid "Furniture"
-msgstr ""
-
-#. module: my_assembly
-#: model:ir.ui.menu,name:my_assembly.montaje_mueble_category_menu
-msgid "Furniture Categories"
-msgstr "Categorias Mueble"
+msgstr "Mueble"
 
 #. module: my_assembly
 #: model:ir.model.fields,field_description:my_assembly.field_muebles_member__partner_latitude
@@ -551,7 +547,7 @@ msgstr ""
 #. module: my_assembly
 #: model_terms:ir.ui.view,arch_db:my_assembly.montaje_mueble_view_search
 msgid "Not Finished"
-msgstr ""
+msgstr "Sin terminar"
 
 #. module: my_assembly
 #: model:ir.model.fields,field_description:my_assembly.field_muebles_member__comment
