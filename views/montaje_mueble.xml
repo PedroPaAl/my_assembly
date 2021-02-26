@@ -96,7 +96,9 @@
         <field name="arch" type="xml">
             <tree>
                 <field name="name"/>
-		<field name="fecha_inicio"/>	
+		<field name="fecha_inicio"/>
+		<field name="fecha_final"/>
+		<field name="state"/>
 	
 		
             </tree>
